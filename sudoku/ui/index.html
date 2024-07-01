@@ -7,38 +7,23 @@
 </head>
 <body>
     <nav class="nav">
-        <a href="/" class="nav-link">Home</a>
-        <label class="nav-link" for="file-upload">Load Board</label>
-        <input id="file-upload" type="file" accept="json" hidden/>
-        <button id="create-btn" hidden>New board</button>
-        <label class="nav-link" for="create-btn">New board
-        <div class="dropdown">
-            <button class="dropbtn">V</button>
-                <div class="dropdown-content">
-                    <button onclick="myFunction(4)">4x4</button>
-                    <button onclick="myFunction(9)">9x9</button>
-                    <button onclick="myFunction(16)">16x16</button>
-                    <button onclick="myFunction(25)">25x25</button>
-                </div>
-          </div>
-        </label> 
+        <label class="nav-link" for="create-btn" onclick="generate(40)">Հեշտ</label> 
+        <label class="nav-link" for="create-btn" onclick="generate(50)">Միջին</label> 
+        <label class="nav-link" for="create-btn" onclick="generate(60)">Բարդ</label> 
         <button id="solve-btn" hidden>Run Solver</button>
-        <label class="nav-link" for="solve-btn">Run Solver</label> 
+        <label class="nav-link" for="solve-btn">Լուծել</label> 
       </nav>
 
-  <h3 id="victory" style="display: none;" >VICTORY</h3>
-  <p style="text-align: center; color: azure">Click a spot and enter a number (enter 0 to clear)<br>
-  Scroll down for controls</p>
-
-  <!-- loading icon -->
+  <h3 id="victory" style="display: none;" >Հաղթանակ </h3>
+  <p style="text-align: center; color: azure">Սեղմեք մուտքագրեք թիվը (մուտքագրեք 0՝ ջնջելու համար)<br>
+  </p>
   <div id="loadingContainer"><img src="/snek.gif" alt="a cute, pixelated, snek"><b>Loading...</b></div>
-
   <br>
   <table id="board"></table>
 
   <div style="display: none" class="controls">
     <div class="controls-section">
-      <button id="load-btn">Reload</button>
+      <button id="load-btn">Վերբեռնել</button>
     </div>
   </div>
   

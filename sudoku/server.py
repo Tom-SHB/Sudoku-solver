@@ -28,6 +28,11 @@ def parse_post(environ):
     except:
         return {}
 
+
+def subgrid_locs(n, i):
+    pass
+
+
 def find_region(n, r, c):
     """(slowly) find which region (as a set of locations) the given coordinates are in [0, n)"""
     for i in range(n):

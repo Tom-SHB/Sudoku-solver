@@ -9,7 +9,12 @@ body {
     
   }
 
-  
+  .filled {
+    color: #083444;
+    font-weight: bold;
+    text-shadow: 0 0 20px #2F4F4F  , 0 0 30px #2F4F4F  , 0 0 40px #2F4F4F  , 0 0 55px #2F4F4F  , 0 0 75px #2F4F4F , 2px 2px 2px #87CEEB  ;
+  }
+    
   
   #board {
     border: 7px solid #283048;
@@ -95,7 +100,7 @@ body {
     background-color: #38d9a9;
     border-bottom: 2px solid #c3fae8;
   }
-  label{
+  label,.btn{
     display: inline-block;
     color: white;
     padding: 0.5rem;
@@ -121,9 +126,9 @@ body {
   }
 
 
-/* Dropdown */
+/* Dropdown
 
-.dropbtn {
+.dropbtn  {
     background-color: rgb(237, 235, 218);
     color: black;
     font-size: 7px;
@@ -162,4 +167,4 @@ body {
   
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
-  }
+  } */
